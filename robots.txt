@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://futbolcubulquiz.com/sitemap.xml
+Sitemap: https://www.futbolcubulquiz.com/sitemap.xml

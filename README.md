@@ -2,7 +2,7 @@
 
 **Futbolcu Bul - Quiz** mobil uygulamasının resmi tanıtım (landing) sitesi.
 
-🔗 **Site:** https://futbolcubulquiz.com _(yakında yayında)_
+🔗 **Site:** https://www.futbolcubulquiz.com _(yakında yayında)_
 
 ## 📱 Uygulama
 Futbol bilgi yarışması & tahmin oyunu. Sadece futbolcunun adını görürsün; kulüplerini, kupalarını, doğum yılını ve ülkesini tahmin edersin.
