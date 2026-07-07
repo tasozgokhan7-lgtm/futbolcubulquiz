@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futbolcu Bul - Quiz | Futbol Bilgi Yarışması & Tahmin Oyunu</title>
+  <meta name="description" content="Sadece futbolcunun adını görürsün; kulüplerini, kupalarını, doğum yılını ve ülkesini tahmin et! Günlük yeni futbolcular, arkadaşınla düello, canlı odalar ve liderlik tablosu. iOS ve Android'de ücretsiz indir." />
+  <meta name="keywords" content="futbolcu bul, futbol quiz, futbol bilgi yarışması, futbolcu tahmin oyunu, futbol oyunu, football quiz, süper lig quiz" />
+  <meta name="author" content="Ahmet Gökhan Taşöz" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a140c" />
+  <link rel="canonical" href="https://futbolcubulquiz.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Futbolcu Bul" />
+  <meta property="og:title" content="Futbolcu Bul - Quiz | Aradığın Futbol Buru" />
+  <meta property="og:description" content="Gerçek bir futbol fanatiği misin? Sadece isimden futbolcuyu tahmin et! Günlük yeni futbolcular, arkadaşınla düello ve liderlik tablosu." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://futbolcubulquiz.com/" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:image" content="https://futbolcubulquiz.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Futbolcu Bul - Quiz | Aradığın Futbol Buru" />
+  <meta name="twitter:description" content="Sadece isimden futbolcuyu tahmin et! Günlük yeni futbolcular, arkadaşınla düello ve liderlik tablosu." />
+  <meta name="twitter:image" content="https://futbolcubulquiz.com/assets/og-image.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Futbolcu Bul - Quiz",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "GameApplication",
+    "description": "Futbol bilgi yarışması ve tahmin oyunu. Sadece futbolcunun adını görürsün; kulüplerini, kupalarını, doğum yılını ve ülkesini tahmin edersin.",
+    "author": { "@type": "Person", "name": "Ahmet Gökhan Taşöz" },
+    "sameAs": [ "https://www.instagram.com/futbolcubulquiz/" ],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.0", "ratingCount": "13" },
+    "downloadUrl": [
+      "https://apps.apple.com/tr/app/futbolcu-bul-quiz/id6767035364",
+      "https://play.google.com/store/apps/details?id=com.futbolcubul.app"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="assets/icon.png" alt="Futbolcu Bul" class="brand-icon" />
+        <span class="brand-name">Futbolcu&nbsp;Bul</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#features" data-i18n="nav_features">Özellikler</a>
+        <a href="#how" data-i18n="nav_how">Nasıl Oynanır</a>
+        <a href="#demo" data-i18n="nav_demo">Dene</a>
+        <a href="#screens" data-i18n="nav_screens">Ekranlar</a>
+        <a href="#download" class="nav-cta" data-i18n="nav_download">İndir</a>
+      </nav>
+
+      <button class="lang-toggle" id="langToggle" aria-label="Dil değiştir">
+        <span class="lang-tr">TR</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="pitch-lines" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge-pill" data-i18n="hero_pill">⚽ Futbol Bilgi Yarışması</span>
+        <h1 data-i18n="hero_title">Gerçek bir futbol<br/>fanatiği misin?</h1>
+        <p class="hero-sub" data-i18n="hero_sub">
+          Sadece futbolcunun adını görürsün. Kulüplerini, kupalarını, doğum yılını ve
+          ülkesini bulmak sana kalır. Süper Lig'den Şampiyonlar Ligi'ne binlerce futbolcu!
+        </p>
+
+        <div class="store-buttons">
+          <a class="store-btn" href="https://apps.apple.com/tr/app/futbolcu-bul-quiz/id6767035364" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.36 1.43c.05.78-.26 1.55-.79 2.13-.55.6-1.44 1.06-2.3.99-.07-.77.3-1.57.79-2.09.55-.58 1.5-1.02 2.3-1.03zM19.5 17.02c-.4.93-.59 1.34-1.11 2.16-.72 1.15-1.74 2.58-3 2.59-1.12.01-1.41-.73-2.93-.72-1.52.01-1.84.73-2.96.72-1.26-.01-2.22-1.3-2.94-2.45-2.02-3.22-2.23-7-1-9.01.88-1.44 2.26-2.28 3.56-2.28 1.32 0 2.15.73 3.24.73 1.06 0 1.7-.73 3.24-.73 1.16 0 2.4.63 3.28 1.72-2.88 1.58-2.41 5.69.62 6.99z"/></svg>
+            <span class="store-btn-txt">
+              <small data-i18n="dl_appstore_small">App Store'dan</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.futbolcubul.app" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.24.25-.38.63-.38 1.13v17.14c0 .5.14.88.4 1.12l.06.06 9.6-9.6v-.22L3.66 2.24l-.06.06zM17 15.1l-3.2-3.2v-.22l3.2-3.2.07.04 3.79 2.15c1.08.61 1.08 1.62 0 2.24L17.07 15l-.07.1zM13.8 11.9l3.26 3.26-9.85 5.6c-.36.2-.7.19-.97.01l10.4-8.87h-2.84zM7.24 2.53c-.27-.18-.61-.19-.97.01l9.85 5.6-3.26 3.26h-2.83L7.24 2.53z"/></svg>
+            <span class="store-btn-txt">
+              <small data-i18n="dl_googleplay_small">Google Play'den</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>⭐ 4.0</span>
+          <span class="dot">•</span>
+          <span data-i18n="hero_meta_free">Ücretsiz</span>
+          <span class="dot">•</span>
+          <span data-i18n="hero_meta_age">13+</span>
+        </div>
+      </div>
+
+      <div class="hero-phone">
+        <img class="hero-mockup" src="assets/screens/mockup.png" alt="Futbolcu Bul uygulama ana ekranı" width="562" height="720" />
+        <div class="phone-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="feat_title">Neden Futbolcu Bul?</h2>
+      <p class="section-lead" data-i18n="feat_lead">Hızlı, bağımlılık yapan ve tamamen futbol tutkunları için.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-ico">📅</div>
+          <h3 data-i18n="feat_1_t">Günün Oyunu & Günlük Seri</h3>
+          <p data-i18n="feat_1_d">Her gün yeni bir bulmaca. Günlük sıralamaya gir, serini bozmadan büyüt!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-ico">💡</div>
+          <h3 data-i18n="feat_2_t">İpucu Sistemi</h3>
+          <p data-i18n="feat_2_d">Takıldığında ipuçlarıyla destekli cevap sistemi imdadına yetişir.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-ico">🤝</div>
+          <h3 data-i18n="feat_3_t">Arkadaşınla Oyna</h3>
+          <p data-i18n="feat_3_d">Kod oluştur, arkadaşına meydan oku ve kafa kafaya yarışın.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-ico">🌍</div>
+          <h3 data-i18n="feat_4_t">Başkalarıyla Oyna</h3>
+          <p data-i18n="feat_4_d">Dünyanın dört bir yanından oyunculara katıl, canlı odalarda rakiplerini yen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-ico">🏆</div>
+          <h3 data-i18n="feat_5_t">Sıralama & Başarımlar</h3>
+          <p data-i18n="feat_5_d">Haftalık, aylık ve yıllık sıralamalarda yüksel, rozet ve başarım topla.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-ico">🎯</div>
+          <h3 data-i18n="feat_6_t">Pratik Yap</h3>
+          <p data-i18n="feat_6_d">Eski futbolcularla sınırsız antrenman yap, bilgini tazele.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How to play ===== -->
+  <section class="section how" id="how">
+    <div class="container">
+      <h2 class="section-title" data-i18n="how_title">Nasıl Oynanır?</h2>
+      <p class="section-lead" data-i18n="how_lead">Üç basit adımda futbol bilgini kanıtla.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3 data-i18n="how_1_t">İsmi Gör</h3>
+          <p data-i18n="how_1_d">Sana yalnızca futbolcunun adı gösterilir. Başka hiçbir ipucu yok!</p>
+        </div>
+        <div class="step-line" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3 data-i18n="how_2_t">Tahmin Et</h3>
+          <p data-i18n="how_2_d">Kulüplerini, kupalarını, doğum yılını ve ülkesini bil.</p>
+        </div>
+        <div class="step-line" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3 data-i18n="how_3_t">Kazan</h3>
+          <p data-i18n="how_3_d">Puan topla, rozet kap ve liderlik tablosunda yüksel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Demo (try it) ===== -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <span class="demo-badge" data-i18n="demo_badge">🎮 İNDİRMEDEN DENE</span>
+      <h2 class="section-title" data-i18n="demo_title">Hemen bir el oyna!</h2>
+      <p class="section-lead" data-i18n="demo_lead">Tıpkı uygulamadaki gibi. Aşağıdaki futbolcuyu tanıyorsun — peki bilgilerini bilebilecek misin?</p>
+
+      <div class="demo-card">
+        <div class="demo-head">
+          <div class="demo-avatar">?</div>
+          <div>
+            <span class="demo-kicker" data-i18n="demo_kicker">Bu futbolcunun…</span>
+            <h3 class="demo-name">Lionel Messi</h3>
+          </div>
+        </div>
+
+        <form class="demo-form" id="demoForm" novalidate>
+          <div class="demo-field" data-key="country">
+            <label data-i18n="demo_f_country">Hangi ülkeden?</label>
+            <div class="demo-input-row">
+              <input type="text" autocomplete="off" spellcheck="false" data-i18n-ph="demo_ph_country" placeholder="örn. Brezilya" />
+              <button type="button" class="demo-hint-btn" data-i18n-title="demo_hint_title" title="İpucu">💡</button>
+            </div>
+            <p class="demo-hint" hidden></p>
+            <p class="demo-feedback" hidden></p>
+          </div>
+
+          <div class="demo-field" data-key="year">
+            <label data-i18n="demo_f_year">Hangi yıl doğdu?</label>
+            <div class="demo-input-row">
+              <input type="text" inputmode="numeric" autocomplete="off" spellcheck="false" data-i18n-ph="demo_ph_year" placeholder="örn. 1990" />
+              <button type="button" class="demo-hint-btn" data-i18n-title="demo_hint_title" title="İpucu">💡</button>
+            </div>
+            <p class="demo-hint" hidden></p>
+            <p class="demo-feedback" hidden></p>
+          </div>
+
+          <div class="demo-field" data-key="club">
+            <label data-i18n="demo_f_club">Bir kulübünü yaz</label>
+            <div class="demo-input-row">
+              <input type="text" autocomplete="off" spellcheck="false" data-i18n-ph="demo_ph_club" placeholder="örn. Real Madrid" />
+              <button type="button" class="demo-hint-btn" data-i18n-title="demo_hint_title" title="İpucu">💡</button>
+            </div>
+            <p class="demo-hint" hidden></p>
+            <p class="demo-feedback" hidden></p>
+          </div>
+
+          <div class="demo-field" data-key="trophy">
+            <label data-i18n="demo_f_trophy">Bir kupasını/ödülünü yaz</label>
+            <div class="demo-input-row">
+              <input type="text" autocomplete="off" spellcheck="false" data-i18n-ph="demo_ph_trophy" placeholder="örn. Dünya Kupası" />
+              <button type="button" class="demo-hint-btn" data-i18n-title="demo_hint_title" title="İpucu">💡</button>
+            </div>
+            <p class="demo-hint" hidden></p>
+            <p class="demo-feedback" hidden></p>
+          </div>
+
+          <button type="submit" class="demo-submit" data-i18n="demo_check">Kontrol Et</button>
+        </form>
+
+        <div class="demo-scoreboard" id="demoScore" hidden></div>
+
+        <div class="demo-actions" id="demoActions" hidden>
+          <button type="button" class="demo-reset" id="demoReset" data-i18n="demo_reset">Tekrar Dene</button>
+          <a class="demo-download" href="#download" data-i18n="demo_more">Binlerce futbolcu için indir →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Screenshots ===== -->
+  <section class="section screens" id="screens">
+    <div class="container">
+      <h2 class="section-title" data-i18n="screens_title">Uygulamadan Kareler</h2>
+      <p class="section-lead" data-i18n="screens_lead">Oyunun içine göz at.</p>
+    </div>
+    <div class="screens-track">
+      <img src="assets/screens/s1.webp" alt="Ekran görüntüsü 1" loading="lazy" />
+      <img src="assets/screens/s2.webp" alt="Ekran görüntüsü 2" loading="lazy" />
+      <img src="assets/screens/s3.webp" alt="Ekran görüntüsü 3" loading="lazy" />
+      <img src="assets/screens/s4.webp" alt="Ekran görüntüsü 4" loading="lazy" />
+      <img src="assets/screens/s5.webp" alt="Ekran görüntüsü 5" loading="lazy" />
+      <img src="assets/screens/s0.webp" alt="Ekran görüntüsü 6" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ===== Instagram follow ===== -->
+  <section class="section insta" id="instagram">
+    <div class="container">
+      <a class="insta-card" href="https://www.instagram.com/futbolcubulquiz/" target="_blank" rel="noopener">
+        <div class="insta-glow" aria-hidden="true"></div>
+        <div class="insta-ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.5 3.2 8.85 3.2 12s.01 3.5.07 4.74c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 0 0-.68-1.06 2.85 2.85 0 0 0-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.5 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8A3.14 3.14 0 1 0 12 15.14 3.14 3.14 0 0 0 12 8.86Zm5.14-3.24a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+        </div>
+        <div class="insta-text">
+          <span class="insta-handle" data-i18n="insta_handle">@futbolcubulquiz</span>
+          <h2 data-i18n="insta_title">Bizi Instagram'da takip et!</h2>
+          <p data-i18n="insta_sub">Yeni futbolcular, güncellemeler, ipuçları ve sürprizlerden ilk sen haberdar ol.</p>
+        </div>
+        <span class="insta-btn" data-i18n="insta_btn">Takip Et</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Download CTA ===== -->
+  <section class="section cta" id="download">
+    <div class="container cta-inner">
+      <img src="assets/icon.png" alt="Futbolcu Bul" class="cta-icon" />
+      <h2 data-i18n="cta_title">İndir, oyna, kazan.</h2>
+      <p data-i18n="cta_sub">Binlerce futbol tutkunu şimdiden oynuyor. Sıra sende!</p>
+      <div class="store-buttons center">
+        <a class="store-btn" href="https://apps.apple.com/tr/app/futbolcu-bul-quiz/id6767035364" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.36 1.43c.05.78-.26 1.55-.79 2.13-.55.6-1.44 1.06-2.3.99-.07-.77.3-1.57.79-2.09.55-.58 1.5-1.02 2.3-1.03zM19.5 17.02c-.4.93-.59 1.34-1.11 2.16-.72 1.15-1.74 2.58-3 2.59-1.12.01-1.41-.73-2.93-.72-1.52.01-1.84.73-2.96.72-1.26-.01-2.22-1.3-2.94-2.45-2.02-3.22-2.23-7-1-9.01.88-1.44 2.26-2.28 3.56-2.28 1.32 0 2.15.73 3.24.73 1.06 0 1.7-.73 3.24-.73 1.16 0 2.4.63 3.28 1.72-2.88 1.58-2.41 5.69.62 6.99z"/></svg>
+          <span class="store-btn-txt"><small data-i18n="dl_appstore_small">App Store'dan</small><strong>App Store</strong></span>
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.futbolcubul.app" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.24.25-.38.63-.38 1.13v17.14c0 .5.14.88.4 1.12l.06.06 9.6-9.6v-.22L3.66 2.24l-.06.06zM17 15.1l-3.2-3.2v-.22l3.2-3.2.07.04 3.79 2.15c1.08.61 1.08 1.62 0 2.24L17.07 15l-.07.1zM13.8 11.9l3.26 3.26-9.85 5.6c-.36.2-.7.19-.97.01l10.4-8.87h-2.84zM7.24 2.53c-.27-.18-.61-.19-.97.01l9.85 5.6-3.26 3.26h-2.83L7.24 2.53z"/></svg>
+          <span class="store-btn-txt"><small data-i18n="dl_googleplay_small">Google Play'den</small><strong>Google Play</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon.png" alt="Futbolcu Bul" />
+        <div>
+          <strong>Futbolcu Bul - Quiz</strong>
+          <span data-i18n="footer_dev">Geliştirici: Ahmet Gökhan Taşöz</span>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/futbolcubulquiz/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.5 3.2 8.85 3.2 12s.01 3.5.07 4.74c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.38-.32-1.7a2.85 2.85 0 0 0-.68-1.06 2.85 2.85 0 0 0-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.5 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 1.8A3.14 3.14 0 1 0 12 15.14 3.14 3.14 0 0 0 12 8.86Zm5.14-3.24a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+            </a>
+            <a href="mailto:futbolcubulquiz@gmail.com" aria-label="E-posta">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm.4 2 8.6 6.2L20.6 7H3.4ZM20 8.9l-7.4 5.3a1 1 0 0 1-1.2 0L4 8.9V17h16V8.9Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#features" data-i18n="nav_features">Özellikler</a>
+        <a href="#download" data-i18n="nav_download">İndir</a>
+        <a href="destek.html" data-i18n="footer_support">Destek</a>
+        <a href="gizlilik.html" data-i18n="footer_privacy">Gizlilik Politikası</a>
+        <a href="https://www.instagram.com/futbolcubulquiz/" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:futbolcubulquiz@gmail.com" data-i18n="footer_contact">İletişim</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Futbolcu Bul. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="demo.js"></script>
+</body>
+</html>
