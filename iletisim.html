@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bize Ulaşın | Futbolcu Bul - Quiz</title>
+  <meta name="description" content="Futbolcu Bul - Quiz ekibiyle iletişime geç. Soru, öneri ve bildirimlerini formu doldurarak bize gönder." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a140c" />
+  <link rel="canonical" href="https://www.futbolcubulquiz.com/iletisim.html" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/icon.png" alt="Futbolcu Bul" class="brand-icon" />
+        <span class="brand-name">Futbolcu&nbsp;Bul</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+        <a href="index.html#download" class="nav-cta" data-i18n="nav_download">İndir</a>
+      </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Dil değiştir">
+        <span class="lang-tr">TR</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <a href="index.html" class="page-back">← <span data-i18n="nav_home">Ana Sayfa</span></a>
+
+      <h1 data-i18n="contact_title">Bize Ulaşın</h1>
+      <p class="updated" data-i18n="contact_lead">Soru, öneri ya da bildirimini bize gönder. Formu doldurup Gönder'e bas — bilgiler kendi mail uygulamanda hazır bir e-postaya aktarılır ve bize ulaşır.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cf-name" data-i18n="contact_name">Adın</label>
+          <input type="text" id="cf-name" autocomplete="name" data-i18n-ph="contact_ph_name" placeholder="Adını yaz" />
+        </div>
+        <div class="field">
+          <label for="cf-email" data-i18n="contact_email">E-posta adresin</label>
+          <input type="email" id="cf-email" autocomplete="email" data-i18n-ph="contact_ph_email" placeholder="ornek@mail.com" />
+        </div>
+        <div class="field">
+          <label for="cf-subject" data-i18n="contact_subject">Konu</label>
+          <input type="text" id="cf-subject" data-i18n-ph="contact_ph_subject" placeholder="Mesajının konusu" />
+        </div>
+        <div class="field">
+          <label for="cf-message" data-i18n="contact_message">Mesajın</label>
+          <textarea id="cf-message" data-i18n-ph="contact_ph_message" placeholder="Bize iletmek istediklerini buraya yaz..."></textarea>
+        </div>
+        <button type="submit" class="contact-submit" data-i18n="contact_send">Gönder</button>
+        <p class="contact-error" id="cf-error" hidden data-i18n="contact_err">Lütfen adını, e-postanı ve mesajını doldur.</p>
+      </form>
+
+      <div class="contact-alt">
+        <span data-i18n="contact_or">Ya da doğrudan e-posta gönder:</span>
+        <a href="mailto:futbolcubulquiz@gmail.com">futbolcubulquiz@gmail.com</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Futbolcu Bul. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+      var TO = 'futbolcubulquiz@gmail.com';
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('cf-name').value.trim();
+        var email = document.getElementById('cf-email').value.trim();
+        var subject = document.getElementById('cf-subject').value.trim();
+        var message = document.getElementById('cf-message').value.trim();
+        var err = document.getElementById('cf-error');
+
+        if (!name || !email || !message) { err.hidden = false; return; }
+        err.hidden = true;
+
+        var isEN = document.documentElement.lang === 'en';
+        var subjLine = subject
+          ? subject + ' — Futbolcu Bul'
+          : (isEN ? 'Contact — Futbolcu Bul' : 'İletişim — Futbolcu Bul');
+
+        var body = (isEN
+          ? 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message
+          : 'Ad: ' + name + '\nE-posta: ' + email + '\n\n' + message);
+
+        window.location.href = 'mailto:' + TO +
+          '?subject=' + encodeURIComponent(subjLine) +
+          '&body=' + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

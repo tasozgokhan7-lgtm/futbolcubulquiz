@@ -5,6 +5,7 @@ const I18N = {
     nav_how: "Nasıl Oynanır",
     nav_demo: "Dene",
     nav_screens: "Ekranlar",
+    nav_contact: "Bize Ulaşın",
     nav_download: "İndir",
 
     hero_pill: "⚽ Futbol Bilgi Yarışması",
@@ -65,6 +66,20 @@ const I18N = {
     demo_more: "Binlerce futbolcu için indir →",
     demo_empty: "Önce bir tahmin yaz ✍️",
 
+    contact_title: "Bize Ulaşın",
+    contact_lead: "Soru, öneri ya da bildirimini bize gönder. Formu doldurup Gönder'e bas — bilgiler kendi mail uygulamanda hazır bir e-postaya aktarılır ve bize ulaşır.",
+    contact_name: "Adın",
+    contact_ph_name: "Adını yaz",
+    contact_email: "E-posta adresin",
+    contact_ph_email: "ornek@mail.com",
+    contact_subject: "Konu",
+    contact_ph_subject: "Mesajının konusu",
+    contact_message: "Mesajın",
+    contact_ph_message: "Bize iletmek istediklerini buraya yaz...",
+    contact_send: "Gönder",
+    contact_err: "Lütfen adını, e-postanı ve mesajını doldur.",
+    contact_or: "Ya da doğrudan e-posta gönder:",
+
     cta_title: "İndir, oyna, kazan.",
     cta_sub: "Binlerce futbol tutkunu şimdiden oynuyor. Sıra sende!",
 
@@ -80,6 +95,7 @@ const I18N = {
     nav_how: "How to Play",
     nav_demo: "Try It",
     nav_screens: "Screens",
+    nav_contact: "Contact Us",
     nav_download: "Download",
 
     hero_pill: "⚽ Football Trivia Game",
@@ -139,6 +155,20 @@ const I18N = {
     demo_reset: "Try Again",
     demo_more: "Download for thousands of players →",
     demo_empty: "Type a guess first ✍️",
+
+    contact_title: "Contact Us",
+    contact_lead: "Send us your question, suggestion or report. Fill in the form and press Send — the details are placed into a ready email in your own mail app and reach us.",
+    contact_name: "Your name",
+    contact_ph_name: "Type your name",
+    contact_email: "Your email address",
+    contact_ph_email: "example@mail.com",
+    contact_subject: "Subject",
+    contact_ph_subject: "Subject of your message",
+    contact_message: "Your message",
+    contact_ph_message: "Write what you'd like to tell us here...",
+    contact_send: "Send",
+    contact_err: "Please fill in your name, email and message.",
+    contact_or: "Or email us directly:",
 
     cta_title: "Download, play, win.",
     cta_sub: "Thousands of football fans are already playing. Your turn!",
