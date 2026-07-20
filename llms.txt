@@ -1,0 +1,31 @@
+# Futbolcu Bul - Quiz
+
+> Futbolcu Bul, oyuncuya yalnızca bir futbolcunun adını gösteren günlük bir futbol bilgi yarışması / tahmin oyunudur. Oyuncu, futbolcunun kulübünü, kazandığı kupaları, doğum yılını ve uyruğunu tahmin etmeye çalışır. iOS ve Android'de ücretsiz olarak indirilebilir; reklamsız kullanım için uygulama içi satın alma sunar.
+
+Geliştirici: Ahmet Gökhan Taşöz. Kategori: Futbol / Spor bilgi yarışması oyunu.
+
+## Ürün
+- [Ana sayfa](https://www.futbolcubulquiz.com/): Uygulama tanıtımı, özellikler, ekran görüntüleri ve indirilebilir mağaza linkleri.
+- [App Store](https://apps.apple.com/tr/app/futbolcu-bul-quiz/id6767035364): iOS sürümü.
+- [Google Play](https://play.google.com/store/apps/details?id=com.futbolcubul.app): Android sürümü.
+- [/oyna](https://www.futbolcubulquiz.com/oyna): Cihaza göre otomatik mağaza yönlendirmesi (iOS → App Store, Android → Google Play).
+
+## Öne çıkan özellikler
+- Günün Oyunu: her gün yeni bir futbolcu bulmacası, günlük seri (streak) takibi.
+- İpucu sistemi: takılan oyuncular için destekleyici ipuçları.
+- Çok oyunculu: arkadaşla kod paylaşarak veya rastgele rakiplerle canlı düello.
+- Haftalık / aylık / yıllık liderlik tabloları ve başarım rozetleri.
+- Süper Lig'den Şampiyonlar Ligi'ne binlerce gerçek futbolcu verisi.
+
+## Destek ve politikalar
+- [Destek / SSS](https://www.futbolcubulquiz.com/destek.html): Sık sorulan sorular (yazım toleransı, satın alma geri yükleme, hesap silme vb.).
+- [Gizlilik Politikası](https://www.futbolcubulquiz.com/gizlilik.html): Toplanan veriler, kullanım amaçları, kullanıcı hakları.
+- [Bize Ulaşın](https://www.futbolcubulquiz.com/iletisim.html): İletişim formu.
+
+## Sosyal
+- Instagram: https://www.instagram.com/futbolcubulquiz/
+- E-posta: futbolcubulquiz@gmail.com
+
+## Notlar
+- Site içeriği Türkçe ve İngilizce olarak (istemci taraflı dil değiştirici ile) sunulur; varsayılan dil Türkçedir.
+- Uygulama ücretsizdir ve reklam içerir; "Reklamsız Premium" uygulama içi satın alma ile kaldırılabilir.

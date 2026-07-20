@@ -294,6 +294,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .page .updated { color: var(--muted); font-size: .88rem; margin-bottom: 30px; }
 .legal { color: #cfe0d5; }
 .legal h2 { font-size: 1.25rem; margin: 34px 0 10px; color: var(--text); }
+.legal h3 { font-size: 1.08rem; margin: 24px 0 8px; color: var(--text); }
 .legal p { margin-bottom: 14px; }
 .legal ul { margin: 0 0 16px 22px; }
 .legal li { margin-bottom: 8px; }
@@ -328,9 +329,11 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
 /* ===== Responsive ===== */
 @media (max-width: 860px) {
+  .hero { padding: 36px 0 56px; }
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
-  .hero-text { order: 2; }
-  .hero-phone { order: 1; margin-bottom: 10px; }
+  .hero-text { order: 1; }
+  .hero-phone { order: 2; margin-top: 28px; }
+  .hero-mockup { width: min(300px, 78%); }
   .hero-sub { margin-left: auto; margin-right: auto; }
   .store-buttons { justify-content: center; }
   .hero-meta { justify-content: center; }

@@ -36,6 +36,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="assets/screens/mockup.webp" fetchpriority="high" />
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -53,6 +54,29 @@
     "downloadUrl": [
       "https://apps.apple.com/tr/app/futbolcu-bul-quiz/id6767035364",
       "https://play.google.com/store/apps/details?id=com.futbolcubul.app"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.futbolcubulquiz.com/#organization",
+        "name": "Futbolcu Bul",
+        "url": "https://www.futbolcubulquiz.com/",
+        "logo": "https://www.futbolcubulquiz.com/assets/icon.png",
+        "sameAs": [ "https://www.instagram.com/futbolcubulquiz/" ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.futbolcubulquiz.com/#website",
+        "url": "https://www.futbolcubulquiz.com/",
+        "name": "Futbolcu Bul - Quiz",
+        "publisher": { "@id": "https://www.futbolcubulquiz.com/#organization" },
+        "inLanguage": "tr-TR"
+      }
     ]
   }
   </script>
@@ -121,7 +145,7 @@
       </div>
 
       <div class="hero-phone">
-        <img class="hero-mockup" src="assets/screens/mockup.png" alt="Futbolcu Bul uygulama ana ekranı" width="562" height="720" />
+        <img class="hero-mockup" src="assets/screens/mockup.webp" alt="Futbolcu Bul uygulama ana ekranı" width="840" height="1050" fetchpriority="high" />
         <div class="phone-glow" aria-hidden="true"></div>
       </div>
     </div>

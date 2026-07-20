@@ -14,17 +14,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.futbolcubulquiz.com/#organization",
+        "name": "Futbolcu Bul",
+        "url": "https://www.futbolcubulquiz.com/",
+        "logo": "https://www.futbolcubulquiz.com/assets/icon.png",
+        "sameAs": [ "https://www.instagram.com/futbolcubulquiz/" ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.futbolcubulquiz.com/#website",
+        "url": "https://www.futbolcubulquiz.com/",
+        "name": "Futbolcu Bul - Quiz",
+        "publisher": { "@id": "https://www.futbolcubulquiz.com/#organization" },
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.futbolcubulquiz.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Gizlilik Politikası", "item": "https://www.futbolcubulquiz.com/gizlilik.html" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="index.html" class="brand">
+      <a href="/" class="brand">
         <img src="assets/icon.png" alt="Futbolcu Bul" class="brand-icon" />
         <span class="brand-name">Futbolcu&nbsp;Bul</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+        <a href="/" data-i18n="nav_home">Ana Sayfa</a>
         <a href="iletisim.html" class="nav-contact" data-i18n="nav_contact">Bize Ulaşın</a>
         <a href="destek.html" class="nav-cta" data-i18n="footer_support">Destek</a>
       </nav>
@@ -36,7 +68,7 @@
 
   <main class="page">
     <div class="container">
-      <a href="index.html" class="page-back">← <span data-i18n="nav_home">Ana Sayfa</span></a>
+      <a href="/" class="page-back">← <span data-i18n="nav_home">Ana Sayfa</span></a>
 
       <!-- ===== Türkçe ===== -->
       <div data-lang="tr">
